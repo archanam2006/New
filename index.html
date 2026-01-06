@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>User Registration Form</h2>
+
+  <form id="userForm">
+
+    <label>Name</label>
+    <input type="text" id="name" placeholder="Enter name">
+    <small id="nameMsg"></small>
+
+    <label>Gender</label>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <small id="genderMsg"></small>
+
+    <label>Date of Birth</label>
+    <input type="date" id="dob">
+
+    <label>Address</label>
+    <textarea id="address" placeholder="Enter address"></textarea>
+
+    <label>Class</label>
+    <select id="class">
+      <option value="">Select Class</option>
+      <option>BCA</option>
+      <option>BSc CS</option>
+      <option>BCom</option>
+      <option>MCA</option>
+    </select>
+
+    <label>Email</label>
+    <input type="email" id="email">
+
+    <label>Password</label>
+    <input type="password" id="password">
+    <small id="passMsg"></small>
+
+    <button type="submit">Submit</button>
+
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
